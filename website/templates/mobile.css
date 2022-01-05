@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px){
+
+    main .pages {
+        display: flex;
+        justify-content: center;
+        padding-left: 142px;
+        padding-right: 142px;
+    }
+
+
+
+    .div2 {
+        position: absolute;
+        border-right: none;
+        height: auto;
+        text-align: center;
+    }
+
+
+
+}
