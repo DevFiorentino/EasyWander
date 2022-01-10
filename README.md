@@ -1,4 +1,4 @@
-NOLEGGIO DI MONOPATTINI (Renting Scooters)
+NOLEGGIO DI MONOPATTINI (Scooter Rental)
 This is a project for the course "Tecnologie Web" from Universitá Parthenope, Naples
 
 The following tecnologies have been used:
