@@ -29,28 +29,26 @@ function SwitchPage (page_id) {
     next_page.classList.add('is-active');
 }
 
-/*Sezione che gestisce il QRcode*/
+/*Sezione che gestisce il QR-code*/
 function onScanSuccess(qrCodeMessage) {
     document.getElementById('result').innerHTML = '<span class="result">'+qrCodeMessage+'</span>';
 }
-
 function onScanError(errorMessage) {
-    //handle scan error
+    console.warn(`Code scan error = ${error}`);
 }
-
 var html5QrcodeScanner = new Html5QrcodeScanner(
-    "reader", { fps: 10, qrbox: 250 });
+    "qr-reader", { fps: 10, qrbox: 250 });
 html5QrcodeScanner.render(onScanSuccess, onScanError);
 
 
-/*Sezione che gestisce la visualizzazione della map. Stabilisce latitudine e longitudine da cui partire
-* (in questo caso, Napoli IT, e, inoltre, ne gestisce anche lo zoom iniziale.*/
-function initMap() {
-    let location = {lat: 40.8563100, lng: 14.2464100};
-    let map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
-        center: location
-    });
+async function registerSW() {
+  if ('serviceWorker' in navigator) {
+    try {
+      await navigator.serviceWorker.register('./sw.js');
+    } catch (e) {
+      console.log(`SW registration failed`);
+    }
+  }
 }
 
 

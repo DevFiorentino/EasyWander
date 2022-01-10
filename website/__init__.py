@@ -19,7 +19,7 @@ def create_app():
     app.register_blueprint(views, url_prefix='/') #nb, / è nessun prefisso
     app.register_blueprint(auth, url_prefix='/')
 
-    from .models import User
+    from .models import User, Card, Scooter, Rent
 
     create_database(app)
 

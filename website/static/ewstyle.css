@@ -18,6 +18,7 @@
     --clrbg: #069a8e;
     --clrFontButton: #0b8a79;
     --clrCard: #c0e83d;
+    --typewriterSpeed: 0.2s;
 }
 
 body{
@@ -197,7 +198,7 @@ main {
     margin-top: 1.6rem;
 }
 
-.card-body{
+.   card-body{
     padding: 2.5rem 2.5rem;
 }
 /*Sezione inerente al cerchio per il credito, parte interna ed esterna*/
@@ -260,6 +261,10 @@ main {
     box-shadow: 0 0.2rem #999;
     transition: .1s ease-in;
     margin: var(--margin-small);
+    animation: fadeInUp 0.7s ease calc(var(--typewriterSpeed) + 0.1s) forwards;
+    opacity: 0;
+    transform: translateY(3rem);
+    margin-top: 2.7rem;
 }
 
 .btl:hover{
@@ -302,7 +307,7 @@ main {
     border: none;
     border-radius: 0.93rem;
     transition: .1s ease-in;
-    box-shadow: 0 0.2rem #666;
+    box-shadow: 0 0.2rem #999;
     margin: var(--margin-small);
 }
 
@@ -362,7 +367,104 @@ main {
     color: ghostwhite;
 }
 
+/*Style Welcome page*/
+.welcome-p{
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--clrBar);
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 0.8s ease calc(var(--typewriterSpeed) + 0.4s) forwards;
 
+}
+
+.welcome-p1{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    color: lightgray;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 1s ease calc(var(--typewriterSpeed) + 1s) forwards;
+
+}
+
+.welcome-up{
+    color: var(--clrBar);
+    background-color: var(--clr);
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+}
+
+.btl-ps{
+    text-align: center;
+}
+
+
+/*Frames per le animazioni, vedi btl*/
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#qr-reader__dashboard_section{
+
+    background-color: var(--clr);
+    border-radius: 0.75rem;
+    margin-top: 2.7rem;
+}
+
+#qr-reader__scan_region{
+    background-color: var(--clr);
+    border-radius: 0.75rem;
+}
+
+#qr-reader {
+    text-align: center;
+    background-color: darkseagreen;
+}
+
+.container-scan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: limegreen;
+    color: ghostwhite;
+    font-weight: bold;
+}
+
+.scan-result{
+    font-size: xx-large;
+    font-weight: bold;
+    color: lightgray;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 0.8s ease calc(var(--typewriterSpeed) + 0.4s) forwards;
+    text-align: center;
+}
 
 
 

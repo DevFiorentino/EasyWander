@@ -2,30 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24f05819-61c8-427c-8aa8-5070f78419bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/EasyWander.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/static/ewstyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/static/mapcss.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/static/mobile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/EasyWanderWebApp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/database.fb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/website/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/static/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/static/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/static/ewstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/ewstyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/static/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/mobile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/account.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/templates/mapcss.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/templates/mobile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/templates/sign_up.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/templates/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/credit.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/credit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/history.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/sign_up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/sub.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/wallet/addCard.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/wallet/addCard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/wallet/infoCard.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/wallet/infoCard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/wallet/wallet.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/wallet/wallet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,9 +69,10 @@
       <recent name="C:\Users\miche\Documents\GitHub\EasyWander\website\static\qrcode" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\miche\Documents\GitHub\EasyWander\website" />
       <recent name="C:\Users\miche\Documents\GitHub\EasyWander\website\templates\wallet" />
       <recent name="C:\Users\miche\Documents\GitHub\EasyWander\website\templates" />
-      <recent name="C:\Users\miche\Documents\GitHub\EasyWander\website" />
+      <recent name="C:\Users\miche\Documents\GitHub\EasyWander\website\static" />
       <recent name="C:\Users\miche\Documents\GitHub\EasyWander" />
     </key>
   </component>
@@ -114,7 +110,8 @@
       <updated>1641391071345</updated>
       <workItem from="1641391074924" duration="1269000" />
       <workItem from="1641648993562" duration="14244000" />
-      <workItem from="1641803754961" duration="17844000" />
+      <workItem from="1641803754961" duration="27289000" />
+      <workItem from="1641841783113" duration="10487000" />
     </task>
     <servers />
   </component>
@@ -132,7 +129,19 @@
       </map>
     </option>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/website/sw.js</url>
+          <line>1</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/EasyWander$main.coverage" NAME="main Coverage Results" MODIFIED="1641825862209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EasyWander$main.coverage" NAME="main Coverage Results" MODIFIED="1641853228856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

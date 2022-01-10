@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Login{% endblock %}
+{% block title %}Account{% endblock %}
 {% block content %}
 
 <div class="container-3">
@@ -11,38 +11,23 @@
     <br>
     <br>
 
-    <h6>Manage Account</h6>
+    <h6>My Account</h6>
 
                 <div class="container">
 
                     <table class="table table-hover table-light">
                         <thead class="thead">
                         <tr>
-                            <th scope="col" class="bg-warning">Username</th>
-                            <th scope="col" class="bg-info">Password</th>
-                            <th scope="col" class="bg-info">Birthday</th>
-                            <th scope="col" class="bg-info">Cell</th>
+                            <th scope="col" class="bg-warning">First Name</th>
+                            <th scope="col" class="bg-info">Last Name</th>
+                            <th scope="col" class="bg-info">email</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                            <td>Mark</td>
-                            <td>abcdef</td>
-                            <td>10/06/96</td>
-                            <td>3960010223</td>
-                            </tr>
-                            <tr>
-                            <td>Jacob</td>
-                            <td>abcdef</td>
-                            <td>10/06/96</td>
-                            <td>3360010223</td>
-                        </tr>
-                        <tr>
-                            <td>Vincent</td>
-                            <td>abcdef</td>
-                            <td>10/06/96</td>
-                            <td>3270010223</td>
-                        </tr>
+                            <td>{{ user.first_name }}</td>
+                            <td>{{ user.last_name }}</td>
+                            <td>{{ user.email }}</td>
                 </tbody>
             </table>
                 <br>

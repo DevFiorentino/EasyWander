@@ -92,9 +92,3 @@ ovvero ai 768pxls*/
     .col-12{
         text-align: center;
     }
-
-    #map {
-        height: 45em;    /*Corrispondenti a 720pxls*/
-        width: inherit;
-    }
-}
