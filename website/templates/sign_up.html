@@ -1,6 +1,95 @@
 {% extends "base.html" %}
-{% block title %}Login{% endblock %}
+{% block title %}Sign Up{% endblock %}
+{% block header %}{% endblock %}
 {% block content %}
-<h1>This is the sign-up page</h1>
+
+<main class="main-2">
+
+    <h1>EasyRegistration</h1>
+
+    <p id="message-status"></p>
+    <br>
+    <br>
+    <br>
+
+    <span class="btl-back" onclick=location.href='javascript:history.go(-1)'>&#8630; Back</span>         <!--Ritorna alla pagina precedente -1-->
+    <br>
+    <br>
+    <br>
+    <br>
+                <form method="POST">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                placeholder="Enter email"
+                        />
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="firstName"
+                                name="firstName"
+                                placeholder="Enter first name"
+                        />
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="password1">Password</label>
+                        <input
+                                type="password"
+                                class="form-control"
+                                id="password1"
+                                name="password1"
+                                placeholder="Enter password"
+                        />
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="password2">Password (Confirm)</label>
+                        <input
+                                type="password"
+                                class="form-control"
+                                id="password2"
+                                name="password2"
+                                placeholder="Confirm password"
+                        />
+                    </div>
+                    <br />
+                    <br>
+                    <br>
+
+                <!--Controllare che effettivamente carichi il documento-->
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <input
+                                type="file"
+                                class="form-control"
+                                id="inputGroupFile02"/>
+                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                    </div>
+                    <br />
+                    <br>
+
+                    <div class="col-12">
+                        <button type="submit" class="btl">Submit</button>
+                    </div>
+                </div>
+                </form>      <!--Controllare chiusura del form-->
+            </div>
+            <div class="form-item">
+                <br>
+            </div>
+        </div>
+</main>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 {% endblock %}

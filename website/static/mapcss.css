@@ -1,0 +1,16 @@
+/*Questo foglio di stile CSS stabilisce lo stile da seguire per la mappa*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#mapid {
+    height: 100vh;
+    width: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}

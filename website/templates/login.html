@@ -1,52 +1,57 @@
 {% extends "base.html" %}
 {% block title %}Login{% endblock %}
+{% block header %}{% endblock %}
 {% block content %}
-<h1>This is the login page</h1>
 
-<main>
+<main class="main-2">
+    <h1> Easy Login</h1>
 <br>
     <br>
+    <br>
+    <br>
+    <br>
     <div class="div2">
-        <div class="form-item">
-            <div class="row g-3">
-
-                <div class="col-md-4">
-                    <label for="validationServerUsername" class="form-label">Username</label>
-                    <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                        <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                        <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                            Please insert your username.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-item">
-                    <br>
-                    <p> Password </p>
-                    <label>
-                        <input type="text" Password="Password" class="input" required>
-                    </label>
-                </div>
+        <form method="POST">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Enter email"
+                />
             </div>
-        </div>
-        <br>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-                Check me out
-            </label>
-        </div>
-        <br>
-        <br>
-
-
-            </form>
-            <div class="form-item">
-                <input type="button" id="Sign Up" value="Sign Up" onclick=location.href='ew_registration.html'; class="btl sign up">
-                <input type="button" id="Log in" value="Log in" onclick=location.href='menu.html'; class="btl">
+            <br>
+            <br>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        name="password"
+                        placeholder="Enter password"
+                />
             </div>
-
+            <br />
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="col-12">
+            <button type="submit" class="btl">Login</button>
+            </div>
         </form>
     </div>
 </main>
