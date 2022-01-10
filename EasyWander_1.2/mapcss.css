@@ -1,0 +1,16 @@
+/*Questo foglio di stile CSS stabilisce lo stile da seguire per la mappa*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 68em;
+    width: inherit;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}

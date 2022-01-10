@@ -1,0 +1,430 @@
+/*Foglio di Stile CSS principale*/
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');  /*Eseguo l'import del font dalle google apis*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+:root {
+    --fontsize-base: 1,375rem;
+    --margin-small: 1,5625rem;
+    --clr: #c0e83d;
+    --clr2: #47c700;
+    --clrBar: #00ad7c;
+    --clrbg: #069a8e;
+    --clrFontButton: #0b8a79;
+    --clrCard: #c0e83d;
+    --typewriterSpeed: 0.2s;
+}
+
+body{
+    background-color: var(--clrBar);
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clrBar);
+}
+
+header nav {
+    font-weight: 400;
+}
+
+header nav .tabs {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .tabs .tab {
+    display: inline-block;
+}
+
+header nav .tabs .tab a[data-switcher] {
+    display: inline-block;
+    padding: 1.25em  1.8em;
+    text-decoration: none;
+    color: whitesmoke;
+    border-end-end-radius: 80%;
+    border-end-start-radius: 10%;
+    border-top-left-radius: 80%;
+    background: transparent;
+    cursor: pointer;
+    margin-top: 1.25em;
+}
+
+header nav .tabs .tab:hover a[data-switcher] {
+    background-color: var(--clr);
+    color: black;
+}
+
+header nav .tabs .tab.is-active a[data-switcher] {
+    background-color: var(--clr);
+    font-weight: 950;
+    color: var(--clrFontButton);
+    text-align: center;
+    margin-top: 1.25em;
+}
+
+h1{
+    color: var(--clrBar);
+    text-align: center;
+    background-color: var(--clr);
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: xxx-large;
+    color: deeppink;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-weight: bold;
+    color: var(--clr);
+    background-color: deeppink;
+    border-end-end-radius: 95%;
+    border-end-start-radius: 30%;
+    border-top-left-radius: 80%;
+}
+
+h4 {
+    font-weight: bold;
+    color: #2772db;
+    text-align: center;
+}
+
+h5 {
+    font-weight: bold;
+    color:  var(--clrFontButton);
+    text-align: center;
+}
+
+h6{
+    font-weight: bold;
+    color:  whitesmoke;
+    text-align: center;
+}
+
+main {
+    padding-left: 8.8em;
+    padding-right: 8.8em;
+}
+
+.pages .page  {
+    display: none;
+}
+
+.pages .page.is-active  {
+    display: block;
+}
+
+.text{
+    font-family: 'Varela Round', bold, sans-serif;
+    font-size: large;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--clr);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3.75em;
+    opacity: 0.8;
+}
+
+.sidenav a {
+    padding: 0.5em 0.5em 0.5em 0.3em;
+    text-decoration: none;
+    font-size: 1.56em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color:  var(--clrFontButton);
+    font-weight: 650
+}
+
+.sidenav .close-btn {
+    position: absolute;
+    top: 0;
+    right: 1.56em;
+    font-size: 2.25em;
+    margin-left:  3.12em;
+}
+/*Media query per stanziare al meglio la sidenav*/
+@media screen and (max-height: 28.125em) {  /*Corrispondono a 450pxls*/
+    .sidenav {padding-top: 0.93em;}
+    .sidenav a {font-size: 1.12em;}
+}
+.side-menu{
+    cursor: pointer;
+    font-size: 1.56em;
+    color: whitesmoke;
+    border-radius: 0.3rem;
+    transition: .3s ease-in;
+    padding-right: 15px;
+}
+
+.schedule{
+    padding-left: 8.8em;
+    padding-right: 8.8em;
+    background-color: ghostwhite;
+    border-radius: 0.75rem;
+    margin-top: 3%;
+    text-align: center;
+}
+
+/*Inizio sezione styleDisplay*/
+.card{
+    box-shadow: 0.1rem 0.2rem #999999;
+    background-color: var(--clrCard);
+    margin-top: 1.6rem;
+}
+
+.   card-body{
+    padding: 2.5rem 2.5rem;
+}
+/*Sezione inerente al cerchio per il credito, parte interna ed esterna*/
+.circle{
+    width: 40vh;
+    height: 40vh;
+    position: center;
+    justify-content: center;
+}
+
+.outer{
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
+    padding: 1.25em;
+    box-shadow: 0.37em 0.37em 0.6em -0.06em rgba(0,0,0,0.15),
+                -0.37em -0.37em 0.6em -0.06em rgba(0,0,0,0.15);
+    background: linear-gradient(greenyellow,forestgreen);
+}
+
+.inner{
+    height: 35vh;
+    width: 35vh;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0.25em 0.25em 0.375em -0.0625em rgba(0,0,0,0.2),
+                inset -0.25em -0.25em 0.375em -0.0625em rgba(0,0,0,0.7),
+                -0.03em -0.03em  rgba(255,255,255,0.7),
+                0.03em 0.03em  rgba(0,0,0,0.15),
+                -0em 0.75em 0.6em -0.6em rgba(0,0,0,0.05);
+    background-image: linear-gradient(var(--clr) 0%,  var(--clr) 80%, yellowgreen 100%);
+}
+
+#coins-number{
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    color: darkslategrey;
+}
+
+
+
+
+
+
+
+
+/*Style dei pulsanti*/
+.btl {
+    background-color: var(--clr);
+    color: var(--clrFontButton);
+    padding: 0.31rem 6rem;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.93rem;
+    box-shadow: 0 0.2rem #999;
+    transition: .1s ease-in;
+    margin: var(--margin-small);
+    animation: fadeInUp 0.7s ease calc(var(--typewriterSpeed) + 0.1s) forwards;
+    opacity: 0;
+    transform: translateY(3rem);
+    margin-top: 2.7rem;
+}
+
+.btl:hover{
+    background-color: var(--clr2);
+    color: var(--clr);
+}
+
+.btl:active{
+    background-color: var(--clr);
+    box-shadow: 0 0.0rem #666;
+    transform: translateY(0.25rem);
+    color: var(--clrFontButton);
+}
+
+/*Style del pulsante Back*/
+.btl-back{
+    background-color: var(--clr);
+    padding: 0.80rem 0.80rem;
+    font-weight: bold;
+    color: var(--clrFontButton);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 0.75rem;
+}
+
+.btl-back:hover{
+    background-color: var(--clr2);
+    color: var(--clr);
+}
+/*Style dei pulsanti nelle Cards e di tutti i pulsanti considerati minori*/
+.minor {
+    background-color: deeppink;
+    padding: 0.31rem 0.62rem;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 0.93rem;
+    transition: .1s ease-in;
+    box-shadow: 0 0.2rem #999;
+    margin: var(--margin-small);
+}
+
+.minor:hover{
+    background-color: var(--clr2);
+}
+
+.minor:active{
+    background-color: deeppink;
+    box-shadow: 0 0.0rem #666;
+    transform: translateY(0.25rem);
+}
+
+.btl-group{
+    display: block;
+    text-align: center;
+    margin-top: 18.75em;
+}
+
+.btn-group {
+    text-align: center;
+    background-color: deeppink;
+    padding: 0.31rem 0.62rem;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 0.93rem;
+    transition: .1s ease-in;
+    margin: var(--margin-small);
+}
+
+.btn-group:hover{
+    background-color: var(--clr2);
+}
+
+.btn-group:active{
+    background-color: deeppink;
+    box-shadow: 0 0.2rem #666;
+    transform: translateY(0.25rem);
+}
+
+.result{
+    background-color: green;
+    color:#fff;
+    padding:1.25em;
+}
+
+.row{
+    display:flex;
+}
+
+.form-group{
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    color: ghostwhite;
+}
+
+/*Style Welcome page*/
+.welcome-p{
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--clrBar);
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 0.8s ease calc(var(--typewriterSpeed) + 0.4s) forwards;
+
+}
+
+.welcome-p1{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    color: lightgray;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 1s ease calc(var(--typewriterSpeed) + 1s) forwards;
+
+}
+
+.welcome-up{
+    color: var(--clrBar);
+    background-color: var(--clr);
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+}
+
+.btl-ps{
+    text-align: center;
+}
+
+
+/*Frames per le animazioni, vedi btl*/
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
